@@ -1,6 +1,6 @@
 .navbar 
 {
-    background-color: #0012b8;
+        background-color: #0012b8;
         margin-bottom: 0;
         border-radius: 0;
 }
@@ -60,6 +60,14 @@ tr:nth-child(even), tr:nth-child(1) {
 }
 
 a, a:hover{
-    color:rgb(0, 0, 0);
+    color:black;
     text-decoration: none;
+}
+
+.text-danger{
+    color:inherit;
+}
+
+.row{
+    padding-top: 25px;
 }
