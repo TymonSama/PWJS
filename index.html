@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/form.js"></script>
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -32,6 +33,7 @@
         <li><a href="#">Galeria</a></li>
         <li><a href="#">Kontakt</a></li>
         <li><a href="#">Info</a></li>
+        <li><a href="#page2">Formularz</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -186,6 +188,43 @@
 </div> 
 </div>
 <!--Koniec Zadania 6 "Zadanie samodzielne"-->
+<!--Zadanie 7 "Formularz kontaktowy JavaScript"-->
+<section id="page2">
+  <div class="container">
+    <h1 class="text-danger">FORMULARZ KONTAKTOWY</h1>
+    <form action="index.html#kontakt" method="post" onsubmit="return checkForm();" >
+      <fieldset>
+        <legend>Formularz kontaktowy</legend>
+        <div class="form-group" id="name">
+          <p id="errorName" class="hide">'Imię' jest wymagane!</p> 
+          <label for="contactName">Imię</label>
+          <input type="text" class="form-control" id="contactName" placeholder="Podaj imię"/>
+        </div>
+        
+        <div class="form-group" id="sur">
+          <p id="errorSur" class="hide">'Nazwisko' jest wymagane!</p> 
+          <label for="contactSur">Nazwisko</label>
+          <input type="text" class="form-control" id="contactSur" placeholder="Podaj nazwisko"/>
+        </div>
+         
+        <div class="form-group" id="mail">
+          <p id="errorEmail" class="hide">'E-mail' jest wymagany!</p> 
+          <label for="contactEmail">E-mail</label>
+          <input type="text" class="form-control" id="contactEmail" placeholder="Podaj email"/>
+        </div>
+
+        <div class="form-group" id="info"> 
+          <p id="errorInfo" class="hide">'Informacje' są wymagane!</p> 
+          <label for="contactInfo">Informacje</label>
+          <textarea class="form-control rounded-0" id="contactInfo" rows="6" placeholder="Podaj informacje"></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-danger" value="Wyślij"/>
+      </fieldset>
+    </form>     
+  </div>
+</section>
+<!--Koniec Zadania 7 "Formularz kontaktowy JavaScript"-->
 <!--Zadanie 5 "Dodawanie stopki"-->
 <footer class="container text-center">
     <div class="container">
