@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <title>Tymon Samagalski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="style3.css" rel="stylesheet"/>
+  </head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" ariaexpanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">
+        <div id="logo">
+          <img src="img/logo.png" alt="tytuł obrazka">
+        </div>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav text-right navbar-right">
+        <li class="active"><a href="index.html" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span>Strona główna</a></li>
+        <li><a href="strona2.html" class="btn btn-primary"><span class="glyphicon glyphicon-record" ></span>Podstrona zadanie</a></li>
+        <li><a href="strona3.html" class="btn btn-primary"><span class="glyphicon glyphicon-record" ></span>JavaScript zadanie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+<br>
+
+<div class="container">
+  <h1>FORMULARZ KONTAKTOWY</h1>
+  <form action="index.html#kontakt" method="post" onsubmit="return checkForm();" >
+    <fieldset>
+      <legend>Wypełnij poprawnie poniższe pola formularza.</legend>
+      <div class="form-group" id="error1">
+        <p id="errorName" class="hide">Podanie imienia jest wymagane!</p>
+        <label for="contactName">Imię</label>
+        <input type="text" class="form-control" id="contactName" onblur="return checkFormName();"/>
+      </div>
+
+      <div class="form-group" id="error2">
+        <p id="errorLastName" class="hide">Podanie nazwiska jest wymagane!</p>
+        <label for="contactLastName">Nazwisko</label>
+        <input type="text" class="form-control" id="contactLastName" onblur="return checkFormLastName();"/>
+      </div>
+
+      <div class="form-group" id="error3">
+        <p id="errorEmail" class="hide">Podanie emaila jest wymagane!</p>
+        <label for="contactEmail">Email</label>
+        <input type="text" class="form-control" id="contactEmail" onblur="return checkFormEmail();"/>
+      </div>
+
+      <div class="form-group" id="error4">
+        <p id="errorInfo" class="hide" >Podanie informacji jest wymagane!</p>
+        <p id="errorInfoLength" class="hide">Długość informacji musi być mniejsza niż 250 znaków!</p>
+        <label for="contactInfo">Informacje</label>
+        <textarea class="form-control" id="contactInfo" onblur="return checkFormInformation();" rows="4"></textarea>
+      </div>
+
+      <input type="submit" class="btn btn-success pull-right" value="Wyślij"/>
+    </fieldset>
+  </form>
+</div>
+
+
+
+
+<br>
+	<footer>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Polityka prywatności
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Nasza Polityka</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				Bezpieczniej niż na Facebooku
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</footer>
+
+
+  <script type="text/javascript" src="js/forms.js"></script>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  </body>
+</html>
