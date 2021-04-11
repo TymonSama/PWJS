@@ -1,113 +1,117 @@
-thead
+#nagl
 {
-	background-color:white;
-
+    font-family: 'Cinzel', serif;
+    color: rgb(157, 157, 157);
 }
-tbody tr:nth-child(even)
+
+.navbar-inverse .nav li a .glyphicon 
 {
-	background-color: white;
-}
-tbody tr:nth-child(odd)
- {
-	background-color: #eeeeee;
-}
+    color: #e96363;
+} 
 
-table
+#cialo
 {
-	width: auto;
+    font-size:18px; 
+    color:white; 
+    background:#323232;
+    font-family: 'Amatic SC', cursive;
 }
 
-.nav-item
+.navbar 
 {
-text-align:right;
+        margin-bottom: 0;
+        border-radius: 0;
 }
 
-.carousel-inner > .item > img {
-	height:400px;
-
-}
-
- .navbar
- {
-	 	background-color:#9c0d0d;
-         margin-bottom: 0;
-         border-radius: 0;
- }
-
- #logo
- {
-     position: absolute;
-     width: 200px;
-     height: 100px;
-
-     top:10px;
-     left:4%;
-
- }
-
- #logo img
- {
-     max-height:50px;
- }
-
- body
- {
-	 font-size:18px;
-	 font-family: 'Poppins', Arial, Halvetica, sans-serif;
-	 background:#eeeeee;
- }
-
-.container > h1
- {
-	 color:#333333;
-	 font-weight: 800;
-	 font-size: 48px;
-	 font-family: 'Poppins', sans-serif;
- }
-
-.navbar > .container > .collapse > .nav > li > a > .glyphicon
+#srodek
 {
-	color: #ff0000;
+    margin: auto;
 }
 
-.navbar > .container > .collapse > .nav > li > .btn
+.row.content 
 {
-	border: none;
-	background-color: rgb(0, 29, 29);
-	padding: 14px 14px;
-	margin-right: 10px;
+    height: 400px;
+}
+    
+.sidenav
+{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #f1f1f1;
+    height: 100%;
 }
 
-
-.navbar {
-	background-color: rgb(180, 16, 16);
+footer
+{
+    color: white;
+    padding: 15px;
 }
 
-.navbar > .container > .collapse > .nav > li > a > .glyphicon{
-	color: white;
-	padding: 10px;
+@media screen and (max-width: 767px)
+{
+    .sidenav
+    {
+        height: auto;
+    }
+    .row.content {height:auto;} 
 }
 
-.navbar-nav > li{
-	padding:10px;
+#logo
+{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+
+    top:10px;
+    left:4%;
+
 }
 
-
-.navbar > .container > .collapse > .nav > li > .btn{
-	padding: 7px;
-	padding-right: 14px;
+#logo img
+{
+    max-height:30px;
 }
 
-.bg-warning{
-	background-color: #eeeeee;
+.carousel-caption
+{
+    color: white;
+    font-weight: 900;
 }
 
-.navbar > .container > .collapse > .nav > li > .btn{
-	background-color: rgb(10, 43, 187);
+#ikonaduza
+{
+    color: rgb(182, 0, 0);
 }
 
-.btn-primary {
-    color: #333333;
-    background-color: rgb(10, 43, 187);
-    border-color: rgb(10, 43, 187);
+#galeria
+{
+    height: 200px;
+    width: 300px;
+}
+
+.navbar-inverse .nav li a .glyphicon {
+    color:rgb(182, 0, 0);
+}
+
+.alert-danger {
+    background-color: black;
+}
+
+#main-page{
+    background-color: #222222;
+    border: none;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+td {
+    border: 1px solid #dddddd;
+}
+
+tr:nth-child(even), tr:nth-child(1) {
+    background-color: #222222;
 }

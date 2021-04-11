@@ -1,6 +1,6 @@
 function checkForm()
 {
-    var error=false; 
+    var error=false;
     var contactName = document.getElementById("contactName");
     var contactSur = document.getElementById("contactSur");
     var contactEmail = document.getElementById("contactEmail");
@@ -41,7 +41,7 @@ function checkForm()
         if(regex.test(email)==false)
         {
             document.getElementById("mail").className="form-group has-error";
-            document.getElementById("errorEmail").innerHTML="Zły format!";
+            document.getElementById("errorEmail").innerHTML="Błędny format!";
             document.getElementById("errorEmail").className="alert alert-danger"; 
             error=true;
         }
