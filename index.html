@@ -197,15 +197,28 @@
 </section>
 
 <div class="container" ng-controller="GalleryListCtrl">
-    <div class="row content text-center">
+  <div class="row content text-center">
+      <label>Wyszukaj: </label>
+      <p><input type="text" ng-model="query" class="form-control"></p>
+      <p ng-if="query"><b>Wyniki wyszukiwania dla:</b> {{query}}</p>
+      <span ng-if="query == null">
         <p><b>Ilość elementów:</b> {{galleries.length}}</p> 
-      <div class="col-sm-4 text-center" ng-repeat="gallery in galleries">
-        <img src="{{gallery.thumbnailUrl}}" class="img-rounded center-block img-responsie" alt="" height=200 width=350>
-        <h3>{{gallery.title}}</h3>
-        <p><strong>Kiedy:</strong> {{gallery.when}}</p>
-      </div>
+      </span>
+      <label>Sortuj: </label>
+      <select ng-model="orderProp" ng-options="sort as sort.label for sort in sortList" class="form-control">
+          <option value="title">Alfabetycznie</option>
+          <option value="when">Chronologicznie</option>
+          <option value="-when">Od Najnowszych</option>
+      </select>
+      <p ng-if="orderProp"><b>Galerie ułożone:</b> {{orderProp.label}}</p>
+      <p></p>
+    <div class="col-sm-4" ng-repeat="gallery in galleries | filter: query | orderBy: orderProp.value"> 
+      <img src="{{gallery.thumbnailUrl}}" class="img-responsive center-block" alt="" height=200 width=350>
+      <h3>{{gallery.title}}</h3>
+      <p><strong>Kiedy:</strong> {{gallery.when}}</p>
     </div>
-</div> 
+  </div>
+</div>
 
 <section id="page2">
   <div class="container">

@@ -29,5 +29,19 @@ portfolioApp.controller('GalleryListCtrl', function($scope)
         'thumbnailUrl':'img/g6.jpg'
         }
     ];
-    $scope.galleries.length;
+    $scope.sortList = 
+    [
+        {
+            'label':'Alfabetycznie',
+            'value':'title'
+        },
+        {
+            'label':'Chronologicznie',
+            'value':'when'
+        },
+        {
+            'label':'Od Najnowszych',
+            'value':'-when'
+        },
+    ];
 });
